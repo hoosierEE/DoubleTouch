@@ -1,6 +1,8 @@
 // Firmware for https://github.iu.edu/PBS-TSG/Block-Touch-Touch
 // This program runs on a Teensy 3.1 microcontroller platform, and provides
 // a USB interface for a pair of resistive touch devices.
+#include <Wire.h>
+#include <SPI.h>
 #include "Adafruit_STMPE610.h"
 #include "DualRTouchPanels.h"
 
