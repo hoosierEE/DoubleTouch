@@ -1,15 +1,13 @@
 # Device Documentation
 The `Double Touch` device implements a double-sided, fMRI-safe touch input device.  Electronic and/or ferromagnetic components are separated from the magnet by an extension cord (10+ meters of CAT-7 cable), allowing the `Adapter Box` to reside in the control room with the experimenter's computers and other non-MRI-safe equipment.
 
-This project revolves around a [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) microcontroller, programmed in C++ using [platformio](http://platformio.org/).
+This project revolves around a [Teensy 3.1](http://www.pjrc.com/teensy/teensy31.html) microcontroller, programmed in C++ using [PlatformIO](http://platformio.org/).
 
 ### Hacking
 To build/upload the microcontroller code (OSX 10.11.1 "El Capitan"):
 
-1. install [Arduino 1.6.5](https://www.arduino.cc/en/Main/Software) and [Teensyduino](http://www.pjrc.com/teensy/td_download.html)
-2. install [Platformio](http://platformio.org/#!/get-started)
-3. `platformio run` from inside the `src/` folder and answer `y` if it asks you to install the Teensy framework
-4. (optional - if platformio complains about `scons`) then `brew install python && pip uninstall scons && pip install scons`
+1. Install [PlatformIO](http://platformio.org/#!/get-started)
+2. `platformio run` from inside the `DoubleTouch/` folder and answer `y` if it asks you to install the Teensy platform
 
 ## Hardware Configuration
 > **WARNING!**  Although a normal CAT-7 ethernet cable is used to make the electrical connection between the touch panels and the Adapter box, it *does not* use the same signal levels as ethernet, and mixing the two could be destructive for all devices involved.
